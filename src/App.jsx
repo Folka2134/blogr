@@ -158,7 +158,7 @@ function App() {
           </div>
         )}
         <div className="h-full flex flex-col justify-center items-center">
-          <h1 className="text-3xl md:text-5xl text-white text-center font-semibold mb-8">
+          <h1 className="text-3xl md:text-5xl text-white text-center font-semibold mb-5">
             A modern publishing platform
           </h1>
           <h4 className="text-white text-center mb-12">
