@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App min-w-[350px]">
-      <header className="h-[550px] pt-6 px-12 md:px-24 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] relative rounded-bl-[5rem]">
+      <header className="h-[550px] pt-12 px-8 md:px-24 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] relative rounded-bl-[5rem]">
         <nav className="flex justify-between md:justify-between items-center">
           <img className="pr-10" src={logo} alt="logo" />
           {expandedMenu ? (
@@ -158,7 +158,7 @@ function App() {
           </div>
         )}
         <div className="h-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-white text-center font-semibold mb-8">
+          <h1 className="text-3xl md:text-5xl text-white text-center font-semibold mb-8">
             A modern publishing platform
           </h1>
           <h4 className="text-white text-center mb-12">
