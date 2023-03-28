@@ -5,7 +5,8 @@ import logo from "./assets/logo.svg";
 import menuIcon from "./assets/icon-hamburger.svg";
 import closeIcon from "./assets/icon-close.svg";
 import circleImg from "./assets/bg-pattern-circles.svg";
-import illustrationImg from "./assets/illustration-editor-desktop.svg";
+import illustrationDesktop from "./assets/illustration-editor-desktop.svg";
+import illustrationMobile from "./assets/illustration-editor-mobile.svg";
 
 function App() {
   const [expandedMenu, setExpandedMenu] = useState(false);
@@ -176,11 +177,11 @@ function App() {
       </header>
       <main className="flex flex-col">
         <article className="">
-          <h2 className="text-4xl text-center text-gray-600 font-semibold mt-32">
+          <h2 className="text-3xl md:text-4xl text-center text-gray-600 font-semibold mt-24 md:mt-32">
             Desgined for the future
           </h2>
-          <section className="flex justify-evenly items-center relative -top-32">
-            <div className="ml-72 mr-24">
+          <section className="relative flex flex-col justify-cente items-center text-center md:text-left md:flex-row md:justify-evenly md:-top-32">
+            <div className="px-5 mb-24 md:ml-72 md:mr-24  md:mb-0">
               <div className="mb-12">
                 <h3 className="text-2xl font-semibold mb-6">
                   Introducing an extensible editor
@@ -206,7 +207,16 @@ function App() {
                 </p>
               </div>
             </div>
-            <img className="" src={illustrationImg} alt="Illustration" />
+            <img
+              className="hidden md:block"
+              src={illustrationDesktop}
+              alt="Illustration"
+            />
+            <img
+              className="md:hidden order-first my-12"
+              src={illustrationMobile}
+              alt="Illustration"
+            />
           </section>
         </article>
       </main>
