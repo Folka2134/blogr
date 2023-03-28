@@ -5,6 +5,7 @@ import logo from "./assets/logo.svg";
 import menuIcon from "./assets/icon-hamburger.svg";
 import closeIcon from "./assets/icon-close.svg";
 import circleImg from "./assets/bg-pattern-circles.svg";
+import phoneImg from "./assets/illustration-phones.svg";
 import illustrationDesktop from "./assets/illustration-editor-desktop.svg";
 import illustrationMobile from "./assets/illustration-editor-mobile.svg";
 
@@ -176,7 +177,7 @@ function App() {
         </div>
       </header>
       <main className="flex flex-col">
-        <article className="">
+        <article className="z-10 bg-white h-full">
           <h2 className="text-3xl md:text-4xl text-center text-gray-600 font-semibold mt-24 md:mt-32">
             Desgined for the future
           </h2>
@@ -218,6 +219,23 @@ function App() {
               alt="Illustration"
             />
           </section>
+        </article>
+        <article className="bg-[#33334B] relative rounded-tr-[5rem] rounded-bl-[5rem] pt-40 md:pt-0">
+          <img className="h-96 absolute z-0 -top-32" src={circleImg} alt="" />
+          <div className="text-center z-10 relative -top-40 md:top-0 md:flex">
+            <img className="relative z-10" src={phoneImg} alt="" />
+            <div className="flex flex-col justify-center">
+              <h2 className="text-4xl font-semibold text-white mb-8">
+                State of the Art Infrastructure
+              </h2>
+              <p className="text-lg text-gray-300 px-5">
+                With reliability and speed in mind, world data centers provide
+                the backbone for ultra-fast connectivity. This ensures your site
+                will load instantly, no mater where your readers are, keeping
+                your site competitive.
+              </p>
+            </div>
+          </div>
         </article>
       </main>
     </div>
