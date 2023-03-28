@@ -182,7 +182,7 @@ function App() {
             Desgined for the future
           </h2>
           <section className="relative flex flex-col justify-cente items-center text-center md:text-left md:flex-row md:justify-evenly md:-top-32">
-            <div className="px-5 mb-24 md:ml-72 md:mr-24  md:mb-0">
+            <div className="px-5 mb-24 md:ml-24 2xl:ml-96 md:mr-24 md:mb-0">
               <div className="mb-12">
                 <h3 className="text-2xl font-semibold mb-6">
                   Introducing an extensible editor
@@ -220,9 +220,9 @@ function App() {
             />
           </section>
         </article>
-        <article className="bg-[#33334B] relative rounded-tr-[5rem] rounded-bl-[5rem] pt-40 md:pt-0">
+        <article className="bg-[#33334B] relative rounded-tr-[5rem] rounded-bl-[5rem] pt-40 md:pt-0 xl:">
           <img className="h-96 absolute z-0 -top-32" src={circleImg} alt="" />
-          <div className="text-center z-10 relative -top-40 md:top-0 md:flex">
+          <div className="text-center z-10 relative -top-40 md:top-0 md:flex md:justify-center xl:mx-96">
             <img className="relative z-10" src={phoneImg} alt="" />
             <div className="flex flex-col justify-center">
               <h2 className="text-4xl font-semibold text-white mb-8">
