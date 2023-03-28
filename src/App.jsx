@@ -4,14 +4,16 @@ import "./App.css";
 import logo from "./assets/logo.svg";
 import menuIcon from "./assets/icon-hamburger.svg";
 import closeIcon from "./assets/icon-close.svg";
+import circleImg from "./assets/bg-pattern-circles.svg";
+import illustrationImg from "./assets/illustration-editor-desktop.svg";
 
 function App() {
   const [expandedMenu, setExpandedMenu] = useState(false);
 
   return (
-    <div className="App">
-      <header className="h-[550px] pt-6 px-24 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] relative rounded-bl-[5rem]">
-        <nav className="flex justify-between items-center">
+    <div className="App min-w-[350px]">
+      <header className="h-[550px] pt-6 px-12 md:px-24 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] relative rounded-bl-[5rem]">
+        <nav className="flex justify-between md:justify-between items-center">
           <img className="pr-10" src={logo} alt="logo" />
           {expandedMenu ? (
             <img
@@ -156,10 +158,10 @@ function App() {
           </div>
         )}
         <div className="h-full flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-white font-semibold mb-8">
+          <h1 className="text-5xl text-white text-center font-semibold mb-8">
             A modern publishing platform
           </h1>
-          <h4 className="text-white mb-12">
+          <h4 className="text-white text-center mb-12">
             Grow your audience and build your online brand
           </h4>
           <div className="w-[300px] flex justify-evenly">
@@ -172,8 +174,41 @@ function App() {
           </div>
         </div>
       </header>
-      <main>
-        <article></article>
+      <main className="flex flex-col">
+        <article className="">
+          <h2 className="text-4xl text-center text-gray-600 font-semibold mt-32">
+            Desgined for the future
+          </h2>
+          <section className="flex justify-evenly items-center relative -top-32">
+            <div className="ml-72 mr-24">
+              <div className="mb-12">
+                <h3 className="text-2xl font-semibold mb-6">
+                  Introducing an extensible editor
+                </h3>
+                <p className="text-gray-500">
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-6">
+                  Robust content management
+                </h3>
+                <p className="text-gray-500">
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you're in full control.
+                </p>
+              </div>
+            </div>
+            <img className="" src={illustrationImg} alt="Illustration" />
+          </section>
+        </article>
       </main>
     </div>
   );
