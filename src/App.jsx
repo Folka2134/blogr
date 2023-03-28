@@ -90,7 +90,71 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="bg-white w-72 absolute ">test</div>
+        {expandedMenu && (
+          <div className="bg-white w-72 absolute rounded-lg md:hidden">
+            <div className="justify-between w-full items-center flex flex-col">
+              <div className="flex flex-col h-full justify-evenly dropdown relative">
+                <button className="group mx-2">
+                  <div className="text-black">Product</div>
+                  <div className="dropdown-menu absolute bg-white shadow-lg rounded-lg p-5 opacity-0 group-focus:opacity-100 transition-opacity duration-150 pointer-events-none group-focus:pointer-events-auto transform">
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Overview
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Pricing
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Marketplace
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Features
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Integrations
+                    </div>
+                  </div>
+                </button>
+                <button className="group mx-2">
+                  <div className="text-black">Company</div>
+                  <div className="dropdown-menu absolute bg-white shadow-lg rounded-lg p-5 opacity-0 group-focus:opacity-100 transition-opacity duration-150 pointer-events-none group-focus:pointer-events-auto transform">
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      About
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Team
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Blog
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Careers
+                    </div>
+                  </div>
+                </button>
+                <button className="group mx-2">
+                  <div className="text-black">Connect</div>
+                  <div className="dropdown-menu absolute bg-white shadow-lg rounded-lg p-5 opacity-0 group-focus:opacity-100 transition-opacity duration-150 pointer-events-none group-focus:pointer-events-auto transform">
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Contact
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      Newsletter
+                    </div>
+                    <div className="py-2 text-gray-600 hover:text-black font-semibold">
+                      LinkedIn
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div className="flex flex-col border-t-2">
+                <button className="text-black mx-6 ">login</button>
+                <button className="bg-white hover:bg-[#FF7A85] p-3 px-8 text-[#FF525D] hover:text-white font-semibold rounded-full">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="h-full flex flex-col justify-center items-center">
           <h1 className="text-5xl text-white font-semibold mb-8">
             A modern publishing platform
